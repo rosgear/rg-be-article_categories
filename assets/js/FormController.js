@@ -1,0 +1,1 @@
+Ext.define('Rg.be.article_categories.FormController',{extend:'Ge.view.form.PanelController',alias:'controller.rg-be-article_categories-form',onChangeMain:function(me,newValue,oldValue,eOpts){let types=Ext.getCmp(this.view.id+'__types');if(newValue)types.show();else types.hide();},});
