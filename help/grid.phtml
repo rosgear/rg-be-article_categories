@@ -1,0 +1,44 @@
+<?php
+/**
+ * Страница "Список категорий материала сайта".
+ * 
+ * Локализации по умолчанию.
+ * 
+ * Этот файл является частью модуля веб-приложения RosGear.
+ * 
+ * @copyright Copyright (c) 2015 RosGear
+ * @license https://rosgear.ru/license/
+ */
+?>
+<article>
+    <h1>List of site article categories</h1>
+    <div class="g-help-screen g-help-screen--hidable">
+        <img src="<?= $assetsUrl, '/help/grid.png' ?>" />
+    </div>
+    <p>The list displays all categories of site article.</p>
+    <h2>List columns</h2>
+    <ul class="g-help-list">
+        <li><b>Index.</b> The ordinal number of the article category in the list. Used for ordering;</li>
+        <li><b>Name.</b> Category name;</li>
+        <li><b>Slug.</b> A slug is a version of the name, a unique part of the URL. It is all lowercase and only Latin letters, numbers, and hyphens. If not specified, it will be created automatically from the name;</li>
+        <li><b>Path.</b> Path is a unique part of the URL. It consists of the category label and subcategory labels (if any). It is created automatically;</li>
+        <li><b>Language.</b> The language in which the category will be available on the site;</li>
+        <li><b>Count.</b> Count of subcategories in categories;</li>
+        <li><b>Published.</b> Publication and availability of the article category on the site.</li>
+    </ul>
+
+    <h2>Toolbar</h2>
+    <ul class="g-help-list">
+        <li><img class="g-help-icon" src="<?= $assetsUrl, '/images/icon-add.svg' ?>" /> <b>Add.</b> Shows the form for adding a article category;</li>
+        <li><img class="g-help-icon" src="<?= $assetsUrl, '/images/icon-delete.svg' ?>" /> <b>Delete.</b> Delete selected article categories;</li>
+        <li><img class="g-help-icon" src="<?= $themeUrl, '/assets/icons/svg/basic/cleanup.svg' ?>" /> <b>Clear.</b> Delete all categories of article;</li>
+        <li><img class="g-help-icon" src="<?= $themeUrl, '/widgets/images/grid/grid-edit.svg' ?>" /> <b>Edit.</b> Shows the form for editing the article category;</li>
+        <li><img class="g-help-icon" src="<?= $themeUrl, '/widgets/images/grid/grid-select.svg' ?>" /> <b>Select.</b> Selects or removes selection of article categories;</li>
+        <li><img class="g-help-icon" src="<?= $themeUrl, '/assets/icons/svg/basic/refresh.svg' ?>" /> <b>Refresh.</b> Refresh the list of article categories;</li>
+        <li><img class="g-help-icon" src="<?= $themeUrl, '/widgets/images/grid/grid-profiling-off.svg' ?>" /> <b>Record profiling.</b> Expands and collapses the Navigation Panel to display information for the selected article category;</li>
+        <li><img class="g-help-icon" src="<?= $themeUrl, '/widgets/images/grid/grid-toggle-columns-off.svg' ?>" /> <b>Show.</b> Shows hidden columns;</li>
+        <li><img class="g-help-icon" src="<?= $themeUrl, '/assets/icons/svg/basic/help.svg' ?>" /> <b>Help.</b> Shows the help window for the current list;</li>
+        <li><img class="g-help-icon" src="<?= $themeUrl, '/assets/icons/svg/basic/search.svg' ?>" /> <b>Search.</b> Shows the form for searching records in the list;</li>
+        <li><img class="g-help-icon" src="<?= $themeUrl, '/assets/icons/svg/basic/filter.svg' ?>" /> <b>Filter.</b> Shows a form for filtering records in a list.</li>
+    </ul>
+</article>

@@ -1,0 +1,44 @@
+<?php
+/**
+ * Страница "Список категорий материала сайта".
+ * 
+ * Русская локализации.
+ * 
+ * Этот файл является частью модуля веб-приложения RosGear.
+ * 
+ * @copyright Copyright (c) 2015 RosGear
+ * @license https://rosgear.ru/license/
+ */
+?>
+<article>
+    <h1>Список категорий материала сайта</h1>
+    <div class="g-help-screen g-help-screen--hidable">
+        <img src="<?= $assetsUrl, '/help/grid.png' ?>" />
+    </div>
+    <p>В списке отображаются все категории материала сайта.</p>
+    <h2>Столбцы списка</h2>
+    <ul class="g-help-list">
+        <li><b>Порядок.</b> Порядковый номер категории материала в списке. Применяется для упорядочивания;</li>
+        <li><b>Название.</b>Название категории;</li>
+        <li><b>Ярлык.</b> Ярлык (слаг) - это версия имени, уникальная часть URL-адреса. Это все строчные буквы и только буквы на латинице, цифры и дефисы;</li>
+        <li><b>Путь.</b> Путь - это уникальная часть URL-адреса. Состоит из ярлыка категории и ярлыков подкатегорий (если они имеются). Создаётся автоматически;</li>
+        <li><b>Язык.</b> Язык для которого будет доступна категория материала;</li>
+        <li><b>Количество.</b> Количество подкатегорий в категории;</li>
+        <li><b>Опубликовано.</b> Публикация и доступность категории материала на сайте.</li>
+    </ul>
+
+    <h2>Панель инструментов</h2>
+    <ul class="g-help-list">
+        <li><img class="g-help-icon" src="<?= $assetsUrl, '/images/icon-add.svg' ?>" /> <b>Добавить.</b> Вызывает форму для добавления  категории материала;</li>
+        <li><img class="g-help-icon" src="<?= $assetsUrl, '/images/icon-delete.svg' ?>" /> <b>Удалить.</b> Удаляет выделенные категории материала;</li>
+        <li><img class="g-help-icon" src="<?= $themeUrl, '/assets/icons/svg/basic/cleanup.svg' ?>" /> <b>Очистить.</b> Удаляет все категории материала;</li>
+        <li><img class="g-help-icon" src="<?= $themeUrl, '/widgets/images/grid/grid-edit.svg' ?>" /> <b>Правка.</b> Вызвает форму для редактирования категории материала;</li>
+        <li><img class="g-help-icon" src="<?= $themeUrl, '/widgets/images/grid/grid-select.svg' ?>" /> <b>Выделить.</b> Выделяет или убирает выделение категорий материала;</li>
+        <li><img class="g-help-icon" src="<?= $themeUrl, '/assets/icons/svg/basic/refresh.svg' ?>" /> <b>Обновить.</b> Обновляет список категорий материала;</li>
+        <li><img class="g-help-icon" src="<?= $themeUrl, '/widgets/images/grid/grid-profiling-off.svg' ?>" /> <b>Профилирование записи.</b> Разворачивает или сворачивает Панель навигации для отображения информации о выбранной категории материла;</li>
+        <li><img class="g-help-icon" src="<?= $themeUrl, '/widgets/images/grid/grid-toggle-columns-off.svg' ?>" /> <b>Скрыть / Показать.</b> Показывает или скрывает столбцы;</li>
+        <li><img class="g-help-icon" src="<?= $themeUrl, '/assets/icons/svg/basic/help.svg' ?>" /> <b>Справка.</b> Вызывает окно справочной информации для текущего списка;</li>
+        <li><img class="g-help-icon" src="<?= $themeUrl, '/assets/icons/svg/basic/search.svg' ?>" /> <b>Поиск.</b> Вызывает форму поиска записей в списке;</li>
+        <li><img class="g-help-icon" src="<?= $themeUrl, '/assets/icons/svg/basic/filter.svg' ?>" /> <b>Фильтр.</b> Вызывает форму фильтрации записей в списке.</li>
+    </ul>
+</article>

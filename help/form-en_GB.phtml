@@ -1,0 +1,28 @@
+<?php
+/**
+ * Страница "Форма редактирования материала сайта".
+ * 
+ * Английская (британская) локализация.
+ * 
+ * Этот файл является частью модуля веб-приложения RosGear.
+ * 
+ * @copyright Copyright (c) 2015 RosGear
+ * @license https://rosgear.ru/license/
+ */
+?>
+<article>
+    <h1>Form for editing the site article category</h1>
+    <div class="g-help-screen g-help-screen--hidable">
+        <img src="<?= $assetsUrl, '/help/form.png' ?>" />
+    </div>
+    <p>The form appears after clicking the <b>"Add"</b> button on the article category list toolbar or selecting the <b>"Edit"</b> item from the context menu of the selected article category record.</p>
+    <h2>Form fields</h2>
+    <ul class="g-help-list">
+        <li><span class="g-help-fld g-help-fld_spinner"></span> <b>Index.</b> The ordinal number of the article category in the list. Used for ordering;</li>
+        <li><span class="g-help-fld g-help-fld_combo"></span> <b>Language.</b> The language for which the article category will be available;</li>
+        <li><span class="g-help-fld g-help-fld_text"></span> <b>Name.</b> Article category name;</li>
+        <li><span class="g-help-fld g-help-fld_text"></span> <b>Slug.</b> A slug is a version of the name, a unique part of the URL. It is all lowercase and only Latin letters, numbers, and hyphens. If not specified, it will be created automatically from the name;</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Main page.</b> If the checkbox is checked, the material will be added as the main page of the category;</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Publish.</b> Publication and availability of the article category on the site.</li>
+    </ul>
+</article>
