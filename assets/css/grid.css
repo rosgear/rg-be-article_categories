@@ -1,0 +1,40 @@
+/*!
+ * Сетка (Grid).
+ * 
+ * Модуль "Категории материалов".
+ * 
+ * Copyright 2015 RosGear
+ * Copyright Anton Tivonenko <anton.tivonenko@gmail.com>
+ * https://rosgear.ru/license/
+ */
+
+/* Заливка заднего фона сетки (см. идент. viewManager) */
+#rg-acategories-grid .x-tree-view {
+    background: url("../images/watermark.svg") no-repeat calc(100% - 25px) calc(100% - 20px);
+    background-size: 100px; }
+
+
+/**
+ * Контекстное меню записи.
+ */
+/* Значок "Добавить в" */
+.rg-acategories__icon-add-to {
+    background-image: url("../images/icon-add-to.svg"); }
+/* Значок "Переместить" */
+.rg-acategories__icon-move-to {
+    background-image: url("../images/icon-move-to.svg"); }
+
+
+/**
+ * Панель инструментов сетки.
+ */
+ /* Значок "Добавить" */
+.rg-acategories__icon-add_large,
+.rg-acategories__icon-add_medium,
+.rg-acategories__icon-add { background-image: url("../images/icon-add.svg"); }
+.rg-acategories__icon-add_small { background-image: url("../images/icon-add_small.svg"); }
+/* Значок "Удалить" */
+.rg-acategories__icon-delete_large,
+.rg-acategories__icon-delete_medium,
+.rg-acategories__icon-delete { background-image: url("../images/icon-delete.svg"); }
+.rg-acategories__icon-delete_small { background-image: url("../images/icon-delete_small.svg"); }
