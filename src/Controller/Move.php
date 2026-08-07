@@ -88,7 +88,7 @@ class Move extends FormController
         /** @var Response $response */
         $response = $this->getResponse();
 
-        /** @var \Rg\Backend\ArticleCategory\Model\Move|null $model */
+        /** @var \Rg\Backend\ArticleCategories\Model\Move|null $model */
         $model = $this->getModel($this->defaultModel);
         if ($model === null) {
             $response
@@ -96,7 +96,7 @@ class Move extends FormController
             return $response;
         }
 
-         /** @var \Rg\Backend\ArticleCategory\Model\Move|null $form*/
+         /** @var \Rg\Backend\ArticleCategories\Model\Move|null $form*/
         $form = $model->get();
         if ($form === null) {
             $response
