@@ -137,9 +137,8 @@ class Generator extends DataModel
         // удаление всех категорий
         $this->nestedSet->clean();
         $this->articleClean();
-        /** @var \Rg\Backend\ArticleCategories\Model\Article $article статья категории */
-        $article = $this->module->getModel('Article');
-
+        /** @var \Rg\Backend\Articles\Model\Article $article статья категории */
+        $article = Ge::getMModel('Article', 'rg.be.articles');
         for ($i = 1; $i < $this->maxCategories + 1; $i++) {
             $parentName = sprintf($this->nameTemplate, $i);
             $parentSlug = URLify::filter($parentName, 255, '', true);
