@@ -10,6 +10,7 @@
 namespace Rg\Backend\ArticleCategories\Model;
 
 use URLify;
+use Ge;
 use Ge\Db\Sql\Expression;
 use Ge\Mvc\Module\BaseModule;
 use Ge\Panel\Data\Model\FormModel;
@@ -185,7 +186,7 @@ class Form extends FormModel
                     $result = $nestedSet->getChildCount($this->node) + 1;
                 }
             }
-            $this->afterDelete(true, $result);
+            $this->afterDelete($result);
         }
         return $result;
     }
