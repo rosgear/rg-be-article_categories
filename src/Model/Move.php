@@ -9,6 +9,7 @@
 
 namespace Rg\Backend\ArticleCategories\Model;
 
+use Ge;
 use Ge\Mvc\Module\BaseModule;
 use Ge\Panel\Data\Model\FormModel;
 
