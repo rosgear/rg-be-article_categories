@@ -9,6 +9,7 @@
 
 namespace Rg\Backend\ArticleCategories\Model;
 
+use Ge;
 use Ge\Helper\Url;
 use Ge\Mvc\Module\BaseModule;
 use Ge\Panel\Data\Model\TreeGridModel;
