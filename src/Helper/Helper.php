@@ -34,11 +34,11 @@ class Helper extends DataModel
      * 
      * Обновление статей у которых указана категория.
      * 
-     * @param array|null
+     * @param array|null $categories
      * 
      * @return bool Если false, ошибка удаления или обновления записей.
      */
-    public function deleteArticles(array $categories = null): bool
+    public function deleteArticles(?array $categories = null): bool
     {
         /** @var \Ge\Db\Adapter\Adapter $db */
         $db = $this->getDb();
